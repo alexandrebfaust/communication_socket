@@ -10,8 +10,7 @@ dest = (SERVER, PORT)
 tcp.connect(dest)
 print ('Para sair use CTRL+X\n')
 
-while msg != '\x18':
+while True:
     rmsg = tcp.recv(1024)
-    if not rmsg: break
     print(rmsg)
 tcp.close()

@@ -19,7 +19,7 @@ while True:
         msg = con.recv(1024)
         if not msg: break
         print(msg)
-        con2.send(msg.encode())
+        con2.send(msg)
 
     print ('Finalizando conexao do cliente', cliente)
     con.close()
