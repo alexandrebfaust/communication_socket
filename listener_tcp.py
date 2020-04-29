@@ -1,4 +1,4 @@
-#Cliente TCP
+#Listener TCP
 import socket
 # Endereco IP do Servidor
 SERVER = '127.0.0.1'
